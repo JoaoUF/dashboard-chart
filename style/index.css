@@ -19,7 +19,7 @@ body {
     height: 100vh;
     background-color: #131722;
     display: grid;
-    grid-template-rows: 15% 1% 7% 35% 1% 40%;
+    grid-template-rows: 15% 3% 7% 35% 3% 37%;
     grid-template-columns: 100%;
     justify-content: center;
     align-items: center;
@@ -69,27 +69,80 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: var(--walletstatus-fz);
     margin: 0px;
+    color: #868686;
 }
 
 .sidebar__walletstatus__text h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: var(--walletstatus-fz);
     margin: 0px;
+    color: #ffffff;
 }
 
 .sidebar__search {
-    height: 60%;
+    height: 50%;
     width: 70%;
-    padding: 5%;
+    padding: 2%;
     border: none;
-    border-radius: 25%;
-
+    border-radius: 10px;
     background-color: #090c13;
+    border-bottom: solid #3a3d42;
     justify-self: center;
     align-self: center;
     display: grid;
     grid-template-columns: 15% 75%;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar__search__img{
+    width: 50%;
+    justify-self: center;
+    align-self: center;
+}
+.sidebar__search_submit{
+    color: #b5bdc9;
+    background-color: transparent;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--walletstatus-fz);
+}
+.sidebar__menu{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+}
+.sidebar__menu__item{
+    height: 10%;
+    width: 70%;
+    padding: 2%;
+    margin-top: 2%;
+    border-radius: 10px;
+    background-color: transparent;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 15% 75%;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar__menu__item__img{
+    width: 50%;
+    justify-self: center;
+    align-self: center;
+}
+.sidebar__menu__item__text{
+    text-decoration: none;
+    color: #b5bdc9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--walletstatus-fz);
+}
+.sidebar__menu__item--choose{
+    background-color: #007aff;
 }
 
 .mainbody {
