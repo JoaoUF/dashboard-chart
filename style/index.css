@@ -46,7 +46,7 @@ body {
     align-items: center;
 }
 .sidebar__walletstatus__img {
-    width: 100%;
+    width: 75%;
 }
 .sidebar__walletstatus__text {
     width: 100%;
@@ -83,7 +83,7 @@ body {
     align-items: center;
 }
 .sidebar__search__img{
-    width: 50%;
+    width: 70%;
 }
 .sidebar__search_submit{
     color: #b5bdc9;
@@ -94,7 +94,7 @@ body {
 }
 .sidebar__menu{
     /*SELF*/
-    width: 74.2%;
+    width: 70%;
     height: 100%;
     margin: 0px;
     padding: 0px;
@@ -102,28 +102,31 @@ body {
     justify-self: center;
     align-self: center;
     /*SONS*/
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 10%;
-    justify-content: space-around;
-    align-items: center;
+    transform: translate(-3%, 0%);
 }
 .sidebar__menu__item{
     /*SELF*/
-    padding: 2.74%;
+    width: 100%;
+    height: 7.78%;
+    margin-top: 2.5%;
+    padding: 2.85%;
     border-radius: 10px;
     background-color: transparent;
     justify-self: center;
     align-self: center;
+    pointer-events: auto;
     /*SONS*/
     display: grid;
     grid-template-columns: 15% 75%;
     justify-content: center;
     align-items: center;
 }
+.sidebar__menu__item--nochoose:hover{
+    background-color: #242938;
+}
 .sidebar__menu__item__img{
-    width: 50%;
-    justify-self: center;
+    width: 70%;
+    justify-self: start;
     align-self: center;
 }
 .sidebar__menu__item__text{
@@ -131,6 +134,7 @@ body {
     color: #b5bdc9;
     font-family: Arial, Helvetica, sans-serif;
     font-size: var(--walletstatus-fz);
+    pointer-events: none;
 }
 .sidebar__menu__item--choose{
     background-color: #007aff;
