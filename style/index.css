@@ -218,5 +218,48 @@ body {
     justify-self: center;
 }
 .mainbody__menucontent{
-
+    width: 85vw;
+    height: 86vh;
+    display: grid;
+    grid-template-columns: 70vw 15vw;
+}
+.mainbody__menucontent__showmetrics{
+    padding: 4vh 2vw 4vh 2vw;
+    display: inline-grid;
+    grid-template-rows:min-content;
+}
+.mainbody__menucontent__showmetrics__showitmebar{
+    padding: 2vh 2vw 2vh 2vw;
+    border: 1px solid #232323;
+    display: inline-flex;
+    flex-flow: row;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.mainbody__menucontent__showmetrics__shownumbers__item{
+    display: grid;
+    grid-template-columns: 0.8vw 5vw;
+    grid-template-rows: 8vh;
+}
+.mainbody__menucontent__showmetrics__shownumbers__item__texts *{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.mainbody__menucontent__showmetrics__shownumbers__item__texts__header{
+    font-weight: lighter;
+    font-size: clamp(0.5vh, 1vh, 1.5vh);
+}
+.mainbody__menucontent__showmetrics__shownumbers__item__texts__quantity{
+    padding: 0.5vh 0 0.5vh 0;
+    font-size: clamp(1.6vh, 3.5vh, 4vh);
+}
+.mainbody__menucontent__showmetrics__shownumbers__item__texts__percentage{
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-template-columns: min-content;
+}
+.mainbody__menucontent__showmetrics__shownumbers__item__texts__percentage__number{
+    font-weight: lighter;
+    font-size: clamp(0.5vh, 1vh, 1.5vh);
 }
