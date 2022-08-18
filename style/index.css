@@ -221,7 +221,7 @@ body {
     width: 85vw;
     height: 86vh;
     display: grid;
-    grid-template-columns: 70vw 15vw;
+    grid-template-columns: 65vw 20vw;
 }
 .mainbody__menucontent__showmetrics{
     padding: 4vh 2vw 4vh 2vw;
@@ -233,13 +233,16 @@ body {
     border: 1px solid #232323;
     display: inline-flex;
     flex-flow: row;
-    justify-content: space-between;
+    justify-content: space-around;
     border-radius: 10px;
 }
 .mainbody__menucontent__showmetrics__shownumbers__item{
     display: grid;
     grid-template-columns: 0.8vw 5vw;
     grid-template-rows: 8vh;
+}
+.mainbody__menucontent__showmetrics__shownumbers__item__img{
+    width: 0.6vw;
 }
 .mainbody__menucontent__showmetrics__shownumbers__item__texts *{
     margin: 0px;
@@ -249,6 +252,7 @@ body {
 .mainbody__menucontent__showmetrics__shownumbers__item__texts__header{
     font-weight: lighter;
     font-size: clamp(0.5vh, 1vh, 1.5vh);
+    color: #8491a5;
 }
 .mainbody__menucontent__showmetrics__shownumbers__item__texts__quantity{
     padding: 0.5vh 0 0.5vh 0;
@@ -262,4 +266,30 @@ body {
 .mainbody__menucontent__showmetrics__shownumbers__item__texts__percentage__number{
     font-weight: lighter;
     font-size: clamp(0.5vh, 1vh, 1.5vh);
+}
+.mainbody__menucontent__showmetrics__shownumbers__item__texts__percentage__img{
+    height: 1vh;
+}
+.line{
+    width: 1px;
+    height: auto;
+    background-color: #232323;
+}
+.number--positive{
+    color: #2ac670;
+}
+.number--negative{
+    color: #ff6252;
+}
+.mainbody__menucontent__comisionbalance *{
+    margin: 0px;
+    height: min-content;
+}
+.mainbody__menucontent__comisionbalance{
+    border: 1px #232323;
+    border-style: none none none solid;
+    display: inline-flex;
+    flex-direction: column;
+}
+.mainbody__menucontent__comisionbalance div{
 }
