@@ -284,12 +284,52 @@ body {
 .mainbody__menucontent__comisionbalance *{
     margin: 0px;
     height: min-content;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .mainbody__menucontent__comisionbalance{
     border: 1px #232323;
     border-style: none none none solid;
     display: inline-flex;
-    flex-direction: column;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainbody__menucontent__comisionbalance img{
+    width: 5vw;
+    height: 5vw;
+}
+.mainbody__menucontent__comisionbalance h5{
+    color: #828282;
+    font-size: clamp(0.5vh, 1vh, 1.5vh);
+}
+.mainbody__menucontent__comisionbalance h1 {
+    color: white;
+    font-size: clamp(2vh, 2.5vh, 3vh);
+    margin: 1vw;
+}
+.mainbody__menucontent__comisionbalance button {
+    color: white;
+    font-size: clamp(0.5vh, 1vh, 1.5vh);
+    font-weight: bold;
+    background-color: #007aff;
+    border: none;
+    padding: 1.5vh 3vw 1.5vh 3vw;
+    border-radius: 5px;
 }
 .mainbody__menucontent__comisionbalance div{
+    margin: 0.5vh;
+    display: flex;
+    align-content: center;
+}
+.mainbody__menucontent__comisionbalance div img{
+    width: 1vh;
+    height: 1vh;
+}
+.mainbody__menucontent__comisionbalance div h5{
+    color: #031450;
+    font-size: clamp(0.5vh, 1vh, 1.5vh);
+}
+.chart{
+    width: auto;
+    height: 50vh;
 }

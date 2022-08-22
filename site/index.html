@@ -6,6 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style/index.css" type="text/css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['bar'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Days', 'Transfer', 'Withdrawals', 'Bill payment'],
+                ['Sun', 500000, 245000, 980000],
+                ['Mon', 170000, 240000, 500000],
+                ['Tue', 504000, 800000, 260000],
+                ['Wed', 505000, 230000, 900000],
+                ['Thu', 501000, 800000, 501000],
+                ['Fri', 1990000, 160000, 720000],
+                ['Sad', 504000, 305000, 550000]
+            ]);
+
+            var options = {
+                chart: {
+                    title: 'Transaction chart',
+                    subtitle: 'Thi color represents the data in the graph',
+                }
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+        }
+    </script>
 </head>
 <body>
     <div class="sidebar">
@@ -101,16 +130,16 @@
                     </div>
                 </div>
                 <div class="mainbody__menucontent__showmetrics__showchart">
-
+                    <div id="columnchart_material" class="chart"></div>
                 </div>
             </div>
             <div class="mainbody__menucontent__comisionbalance">
-                <img src="" alt="">
+                <img src="../icon/wallet-last.svg" alt="">
                 <h5>Referal commission balance</h5>
                 <h1>N120,000,000</h1>
                 <button>Withdraw</button>
                 <div>
-                    <img src="" alt="">
+                    <img src="../icon/reload.svg" alt="">
                     <h5>View commission history</h5>
                 </div>
             </div>
